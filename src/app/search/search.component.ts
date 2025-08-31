@@ -44,7 +44,7 @@ export class SearchComponent {
       },
     });
   }
-  onClicked() {
+     onClicked() {
     this.router.navigate([`/film/${this.name}`]);
   }
 
@@ -64,9 +64,9 @@ export class SearchComponent {
   onWatchlist(){
 this.service.onWatch(this.data);
 this._snackBar.open(`${this.data?.Title} added to watchlist`, '', {
-  duration: 1700, 
-  horizontalPosition: 'right', 
-  verticalPosition: 'top', 
-});  
+  duration: 1700,
+  horizontalPosition: 'right',
+  verticalPosition: 'top',
+});
   }
 }

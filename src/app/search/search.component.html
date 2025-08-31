@@ -31,12 +31,7 @@
                                                  class=" col-md-3 text-end text-md-end mt-2 mt-md-0 col-6 position-relative d-flex justify-content-end      position-absolute bottom-1 end-0 me-3 mb-4">
                                                  <button (click)="onWatchlist()"
                                                         class="watchlist border-dark border bg-custom-gray text-light  py-0    ">
-                                                        <img src="https://static-00.iconduck.com/assets.00/plus-icon-512x512-hnjyaquo.png"
-                                                               loading="lazy" class="icon loaded"
-                                                               onload="LoadUtils.handleImageLoad(this);"
-                                                               onerror="LoadUtils.handleImageLoadError(this);"
-                                                               alt="plus icon" title="plus icon"
-                                                               data-alternate="https://d1rs1tqcxzgl1z.cloudfront.net/iconduck/image/upload/w_614,h_614,c_fit/f_png/e_colorize:0,co_rgb:000000/w_644,h_644,c_lpad/e_trim:1/w_512,h_512,c_fit/s3.prod/assets.00/asst1317m3j5">
+                                                   <img src="/plus.png" alt="plus icon" class="specialButton" >
                                                  </button>
                                           </div>
                                    </header>
@@ -51,7 +46,6 @@
 
 
                             <div class="card-body bg-dark text-light">
-                                   <!-- <a [routerLink]="['/film', name] class="fw-bold card-link" (click)="onClicked()">Card link</a> -->
                                     <a  [routerLink]="['/film',name]" class="fw-bold card-link" (click)="onClicked()">Card Link</a>
                             </div>
                      </div>
@@ -75,14 +69,14 @@
 
 @if ( (response=='False') && search) {
        <div class="container ">
-       
+
               <div class="card ">
                      <div class="card-body text-center fw-bold text-light bg-dark">
                             Film is not found !
                      </div>
               </div>
        </div>
-       
+
        }
 
 

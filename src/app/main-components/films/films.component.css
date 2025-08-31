@@ -6,7 +6,7 @@
 .custom-cards a{
        text-decoration: none;
        color: #ffc857;
-       
+
 }
 .custom-cards a:hover{
        color: white;
@@ -21,8 +21,8 @@
 .title{
        height: 75px;
        cursor: pointer;
-
 }
-/* mat-form-field {
-       margin-right: 12px;
-     } */
+button>img{
+  height: 48px;
+  width: 48px;
+}

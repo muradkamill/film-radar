@@ -6,6 +6,10 @@
 *{
        font-weight: bold;
 }
+.littlelogo{
+  height: 40px;
+  width: 40px;
+}
 .movie{
        height: 1.8rem;
        width: 2.5rem;

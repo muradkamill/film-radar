@@ -10,7 +10,7 @@
      .bg-custom-red {
        background-color: #d72638;
      }
-     
+
      *{
        font-family: "Lato", serif;
        font-weight: 100;
@@ -18,7 +18,7 @@
      }
     body {
 
-       background-color: #F0E1B3; 
+       background-color: #F0E1B3;
 
 
     }
@@ -31,6 +31,6 @@
 
     }
 
-    
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

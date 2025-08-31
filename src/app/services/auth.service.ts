@@ -11,8 +11,8 @@ export class AuthService {
 
   constructor(private fb: FormBuilder) {
     this.supabase = createClient(
-      'https://pejwmlwuijrfwfjesxzj.supabase.co',
-      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBlandtbHd1aWpyZndmamVzeHpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0NDk0NTMsImV4cCI6MjA1ODAyNTQ1M30.mMeZ7ujW6iZ_1hIQLGgPWhDmmkqHeJx-K6nixc9lVCA'
+      'https://edgzjabxcqfmkghmvizj.supabase.co',
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVkZ3pqYWJ4Y3FmbWtnaG12aXpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY0OTQxNDIsImV4cCI6MjA3MjA3MDE0Mn0.xPrCWXnk2ua6x-xo2jt8KJ52hFAu3-_aYpHdbSlW0VE'
     );
   }
   async signUp(email: string, password: string) {

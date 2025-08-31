@@ -10,7 +10,8 @@ import { SigninComponent } from './signin/signin.component';
 export const routes: Routes = [
   {
     path: '',
-component:BodyComponent
+    component:BodyComponent,
+    pathMatch:"full",
   },
   {
     path: 'search',

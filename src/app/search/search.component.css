@@ -6,11 +6,15 @@
 .custom-cards a{
        text-decoration: none;
        color: #ffc857;
-       
+
 }
 .custom-cards a:hover{
        color: white;
 }
 .card-title{
        cursor: pointer;
+}
+.specialButton{
+  height: 48px;
+  width: 48px;
 }

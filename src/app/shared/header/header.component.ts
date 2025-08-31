@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   constructor(private router:Router){}
   onSignin(){
-this.router.navigate(['/signin'])
+this.router.navigate(['/signin']).then(r =>false )
   }
   onSignup(){
     this.router.navigate(['/signup'])

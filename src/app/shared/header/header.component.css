@@ -1,12 +1,11 @@
-
 .logo {
   width: 14rem;
   height: 3rem;
 }
-.login:hover{
+.login:hover , .signup:hover{
+  background-color: black;
   color: #ffc857;
 }
-.login{
+.login , .signup{
   color: #ffc857;
 }
-

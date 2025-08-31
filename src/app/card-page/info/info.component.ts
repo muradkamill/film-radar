@@ -17,7 +17,6 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class InfoComponent implements OnInit {
 
   name?: any;
-  MovieApi: any;
   search?: string;
   response?: string;
   data?: any;
@@ -119,9 +118,9 @@ export class InfoComponent implements OnInit {
   onWatchClicked() {
       this.service.onWatch(this.data);
       this._snackBar.open(`${this.data?.Title} added to watchlist`, '', {
-        duration: 1700, 
-        horizontalPosition: 'right', 
-        verticalPosition: 'top', 
-      });      
+        duration: 1700,
+        horizontalPosition: 'right',
+        verticalPosition: 'top',
+      });
     }
   }

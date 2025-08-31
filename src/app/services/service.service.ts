@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable({  providedIn: 'root',})
 export class ServiceService {
   arr: any[] = [];
   onWatch(arr: any) {
@@ -10,5 +8,4 @@ export class ServiceService {
       this.arr.push(arr);
       console.log(this.arr)
     }
-  }
-}
+  }}
