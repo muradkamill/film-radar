@@ -12,9 +12,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './watchlist.component.html',
   styleUrl: './watchlist.component.css',
   imports: [
-    FooterComponent,
-    LogoSearchComponent,
-    HeaderComponent,
     FormsModule,
     CommonModule,
   ],
