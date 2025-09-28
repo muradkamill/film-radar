@@ -38,6 +38,20 @@ npm start
 ```
 After running this, the app should be available at **http://localhost:3000/**.  
 
+### 4️⃣ Configure Your API Keys  
+Before using the application, make sure to add your own API keys for the movie and YouTube services.  
+Edit the file `src/environments/environment.development.ts` and add your API keys as follows:
+
+```typescript
+export const environment = {
+  production: false,
+  movieApiKey: 'YOUR_MOVIE_API_KEY_HERE',
+  youtubeApiKey: 'YOUR_YOUTUBE_API_KEY_HERE'
+};
+```
+
+Replace `'YOUR_MOVIE_API_KEY_HERE'` and `'YOUR_YOUTUBE_API_KEY_HERE'` with your actual API keys. This step is necessary for the app to fetch movie data and related YouTube videos properly.
+
 ---
 
 ## 📜 License  
