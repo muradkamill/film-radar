@@ -1,0 +1,27 @@
+<div class="container">
+       <header class="d-flex flex-wrap align-items-center justify-content-between  py-3 mb-4 border-bottom">
+<div class="col-md-3  col-12  text-start text-center">
+       <a href="/" class="d-inline-flex link-body-emphasis  text-decoration-none">
+
+              <img src="/logo.png" class='logo' alt="logo">
+              </a>
+</div >
+<div class="col-md-6  mt-2 mt-md-0 text-center col-6 ">
+       <form class="w-100" role="search">
+       <input (keydown.enter)="onSearch()"   type="search" class="form-control search border-dark" placeholder="Search..." aria-label="Search" #search>
+
+     </form>
+</div>
+<div class=" col-md-3 text-end text-md-end mt-2 mt-md-0 col-6">
+       <button (click)="onlistButton()" class="fw-bold watchlist border-dark border bg-custom-gray text-light p-3 py-0">
+                     <img src="/wishlist.png" loading="lazy" class="icon loaded" onload="LoadUtils.handleImageLoad(this);" onerror="LoadUtils.handleImageLoadError(this);" alt="plus icon" title="plus icon" data-alternate="https://d1rs1tqcxzgl1z.cloudfront.net/iconduck/image/upload/w_614,h_614,c_fit/f_png/e_colorize:0,co_rgb:000000/w_644,h_644,c_lpad/e_trim:1/w_512,h_512,c_fit/s3.prod/assets.00/asst1317m3j5">
+              WATCHLIST</button>
+</div>
+</header>
+</div>
+
+
+
+
+
+

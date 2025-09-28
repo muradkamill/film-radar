@@ -1,0 +1,202 @@
+<div class="container">
+  <h3 class="mb-4">FILMS</h3>
+  <div class="row ">
+
+    @if (sixFilms[0] !== sixFilms[1] !== sixFilms[2] !== sixFilms[3] !== sixFilms[4] !== sixFilms[5]) {
+      <div class="col-md-4 mt-3 mb-3  ">
+
+        <div class="card custom-cards border border-dark">
+          <img src='{{sixFilms[0]?.Poster}}' class="card-img-top foto" alt="...">
+          <div class="card-body  text-light">
+            <h5 class="card-title title " (click)="onClicked0()">{{ sixFilms[0]?.Title }}</h5>
+            <p class="card-text films">{{ sixFilms[0]?.Plot }}</p>
+          </div>
+
+
+
+          <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-between  py-3 mb-4 border-bottom">
+
+
+              <div
+                class=" col-md-3 text-end text-md-end mt-2 mt-md-0 col-6 position-relative d-flex justify-content-end position-absolute bottom-1 end-0 me-3 mb-4">
+                <button (click)="onWatch(sixFilms[0])"
+                        class="watchlist border-dark border bg-custom-gray text-light  py-0    ">
+                  <img src="/plus.png" alt="add">
+                </button>
+
+              </div>
+            </header>
+          </div>
+
+          <div class="card-body bg-dark text-light ">
+            <a routerLink="film" class="fw-bold card-link" (click)="onClicked0()">Card link</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 mt-3 mb-3  ">
+        <div class="card custom-cards border border-dark">
+          <img src='{{sixFilms[1]?.Poster}}' class="card-img-top foto" alt="...">
+          <div class="card-body  text-light">
+            <h5 class="card-title title" (click)="onClicked1()">{{ sixFilms[1]?.Title }}</h5>
+            <p class="card-text films">{{ sixFilms[1]?.Plot }}</p>
+          </div>
+
+          <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-between  py-3 mb-4 border-bottom">
+
+
+              <div
+                class=" col-md-3 text-end text-md-end mt-2 mt-md-0 col-6 position-relative d-flex justify-content-end      position-absolute bottom-1 end-0 me-3 mb-4">
+                <button (click)="onWatch(sixFilms[1])"
+                        class="watchlist border-dark border bg-custom-gray text-light  py-0    ">
+                  <img src="plus.png" alt="add">
+
+                </button>
+
+              </div>
+            </header>
+          </div>
+
+          <div class="card-body bg-dark text-light ">
+            <a routerLink="film" class="fw-bold card-link" (click)="onClicked1()">Card link</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 mt-3 mb-3  ">
+        <div class="card custom-cards border border-dark ">
+          <img src='{{sixFilms[2]?.Poster}}' class="card-img-top foto" alt="...">
+          <div class="card-body  text-light">
+            <h5 class="card-title title " (click)="onClicked2()">{{ sixFilms[2]?.Title }}</h5>
+            <p class="card-text films">{{ sixFilms[2]?.Plot }}</p>
+          </div>
+
+          <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-between  py-3 mb-4 border-bottom">
+
+
+              <div
+                class=" col-md-3 text-end text-md-end mt-2 mt-md-0 col-6 position-relative d-flex justify-content-end      position-absolute bottom-1 end-0 me-3 mb-4">
+                <button (click)="onWatch(sixFilms[2])"
+                        class="watchlist border-dark border bg-custom-gray text-light  py-0    ">
+                  <img src="plus.png" alt="add">
+
+                </button>
+
+              </div>
+            </header>
+          </div>
+
+          <div class="card-body bg-dark text-light ">
+            <a routerLink="film" class="fw-bold card-link" (click)="onClicked2()">Card link</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 mt-3 mb-3  ">
+        <div class="card custom-cards border border-dark">
+          <img src='{{sixFilms[3]?.Poster}}' class="card-img-top foto" alt="...">
+          <div class="card-body  text-light">
+            <h5 class="card-title title" (click)="onClicked3()">{{ sixFilms[3]?.Title }}</h5>
+            <p class="card-text films">{{ sixFilms[3]?.Plot }}</p>
+          </div>
+
+          <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-between  py-3 mb-4 border-bottom">
+
+
+              <div
+                class=" co
+
+              l-md-3 text-end text-md-end mt-2 mt-md-0 col-6 position-relative d-flex justify-content-end      position-absolute bottom-1 end-0 me-3 mb-4">
+                <button (click)="onWatch(sixFilms[3])"
+                        class="watchlist border-dark border bg-custom-gray text-light  py-0    ">
+                  <img src="plus.png" alt="add">
+
+                </button>
+
+              </div>
+            </header>
+          </div>
+
+          <div class="card-body bg-dark text-light ">
+            <a routerLink="film" class="fw-bold card-link" (click)="onClicked3()">Card link</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 mt-3 mb-3  ">
+        <div class="card custom-cards border border-dark">
+          <img src='{{sixFilms[4]?.Poster}}' class="card-img-top foto" alt="...">
+          <div class="card-body  text-light">
+            <h5 class="card-title title" (click)="onClicked4()">{{ sixFilms[4]?.Title }}</h5>
+            <p class="card-text films">{{ sixFilms[4]?.Plot }}</p>
+          </div>
+
+          <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-between  py-3 mb-4 border-bottom">
+
+
+              <div
+                class=" col-md-3 text-end text-md-end mt-2 mt-md-0 col-6 position-relative d-flex justify-content-end      position-absolute bottom-1 end-0 me-3 mb-4">
+                <button (click)="onWatch(sixFilms[4])"
+                        class="watchlist border-dark border bg-custom-gray text-light  py-0    ">
+                  <img src="plus.png" alt="add">
+
+                </button>
+
+              </div>
+            </header>
+          </div>
+
+          <div class="card-body bg-dark text-light ">
+            <a routerLink="film" class="fw-bold card-link" (click)="onClicked4()">Card link</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 mt-3 mb-3  ">
+        <div class="card custom-cards border border-dark">
+          <img src='{{sixFilms[5]?.Poster}}' class="card-img-top foto" alt="...">
+          <div class="card-body  text-light">
+            <h5 class="card-title title" (click)="onClicked5()">{{ sixFilms[5]?.Title }}</h5>
+            <p class="card-text films">{{ sixFilms[5]?.Plot }}</p>
+          </div>
+
+          <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-between  py-3 mb-4 border-bottom">
+
+
+              <div
+                class=" col-md-3 text-end text-md-end mt-2 mt-md-0 col-6 position-relative d-flex justify-content-end      position-absolute bottom-1 end-0 me-3 mb-4">
+                <button (click)="onWatch(sixFilms[5])"
+                        class="watchlist border-dark border bg-custom-gray text-light  py-0    ">
+                  <img src="plus.png" alt="add">
+
+                </button>
+
+              </div>
+            </header>
+          </div>
+
+          <div class="card-body bg-dark text-light ">
+            <a routerLink="film" class="fw-bold card-link" (click)="onClicked5()">Card link</a>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>
+
+
+
+
+
+

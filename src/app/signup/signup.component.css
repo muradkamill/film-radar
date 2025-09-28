@@ -1,0 +1,58 @@
+.body {
+font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("/yy.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background-color: #f0e1b3;
+
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%; 
+}
+
+.password-hint {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+  display: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%; 
+    padding: 15px;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .password-hint {
+    display: block; 
+  }
+} 

@@ -1,0 +1,65 @@
+  <hr>
+
+<div class="container mt-5 mb-5">
+  <h3 class="mb-5">THE BEST MOVIES </h3>
+  <div class="row">
+    <div class="col-md-3 col-12 mb-md-0 mb-3">
+      <div class="video-card">
+        <img src='{{api[0]?.snippet?.thumbnails.high.url}}' class="video-thumbnail" alt="Video Thumbnail">
+        <div class="video-info">
+          <h5 class="video-title title">{{api[0]?.snippet.title}}</h5>
+          <button class="btn btn-danger play-video" (click)="onClicked(api[0]?.id.videoId)"
+            >Play</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-12 mb-md-0 mb-3">
+      <div class="video-card">
+        <img src='{{api[1]?.snippet?.thumbnails.high.url}}' class="video-thumbnail" alt="Video Thumbnail">
+        <div class="video-info">
+          <h5 class="video-title title">{{api[1]?.snippet?.title}}</h5>
+          <button class="btn btn-danger play-video" (click)="onClicked(api[1]?.id?.videoId)" >Play</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-12 mb-md-0 mb-3">
+      <div class="video-card">
+        <img src='{{api[2]?.snippet?.thumbnails.high.url}}' class="video-thumbnail" alt="Video Thumbnail">
+        <div class="video-info">
+          <h5 class="video-title title">{{api[2]?.snippet.title}}</h5>
+          <button class="btn btn-danger play-video" (click)="onClicked(api[2]?.id?.videoId)"
+            >Play</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-12 mb-md-0 mb-3">
+      <div class="video-card">
+        <img src='{{api[3]?.snippet?.thumbnails.high.url}}' class="video-thumbnail" alt="Video Thumbnail">
+        <div class="video-info">
+          <h5 class="video-title title">{{api[3]?.snippet.title}}</h5>
+          <button class="btn btn-danger play-video" (click)="onClicked(api[3]?.id?.videoId)"
+            >Play</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+@if (Id) {
+<div class="modal fade show d-block" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <iframe width="100%" height="315" [src]="Id" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger" (click)="onClose()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+}
+
+
+

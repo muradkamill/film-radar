@@ -1,0 +1,23 @@
+@if (threeFilms && (threeFilms[0] !== threeFilms[1] !== threeFilms[2])) {}
+     <div id="carouselExampleRide" class="carousel slide mb-5" data-bs-ride="true">
+       <div class="carousel-inner">
+         <div class="carousel-item active    ">
+           <img src="{{threeFilms[0]?.Poster}}" (click)="onClick0()" class="d-block  img-fluid mx-auto   size " alt="...">
+
+         </div>
+         <div class="carousel-item ">
+           <img src="{{threeFilms[1]?.Poster}}" (click)="onClick1()" class="d-block img-fluid mx-auto size  " alt="...">
+         </div>
+         <div class="carousel-item ">
+           <img src="{{threeFilms[2]?.Poster}}" (click)="onClick2()" class="d-block img-fluid mx-auto size  " alt="...">
+         </div>
+       </div>
+       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+       </button>
+       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+         <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+       </button>
+     </div>

@@ -1,0 +1,9 @@
+.search,
+.watchlist {
+  height: 3rem;
+  border-radius: 1.6rem;
+}
+.loaded {
+  width: 2rem;
+  height: 2rem;
+}

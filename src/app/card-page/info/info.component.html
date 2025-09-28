@@ -1,0 +1,160 @@
+<div class="container">
+  <div class="card mb-3 position-relative">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src={{data.Poster}} class=" w-100 img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body position-relative">
+          <button (click)="onWatchClicked()" class="watchlist border-dark border bg-custom-gray text-light  p-2 py-1
+                                 position-absolute top-0 end-0 mt-2 me-2">
+            <img class="littlelogo" src="/plus.png" alt="plus">
+            ADD TO WATCHLIST
+          </button>
+          <br><br>
+          <h5 class="card-title">
+            {{ data.Title }} &nbsp; &nbsp; &nbsp;
+            <label class="border bg-custom-gray p-1 fw-bold imdb">
+              IMDB : <span class="card-text"><small>{{ data.imdbRating }}</small></span>
+            </label>
+          </h5>
+
+          <p class="card-text">
+            {{ data.Plot }}
+
+          </p>
+
+          <p class="card-text"><small class="text-body-secondary">Run Time : {{ data.Runtime }} </small></p>
+          <p class="card-text"><small class="text-body-secondary">Release Date :{{ data.Released }}</small></p>
+          <p class="card-text"><small class="text-body-secondary">Genre :{{ data.Genre }}</small></p>
+          <p class="card-text"><small class="text-body-secondary">Cast & Crew : {{ data.Actors }} {{ data.Director }}
+            {{ data.Writer }} </small>
+          <p class="card-text"><small class="text-body-secondary">Languages :{{ data.Language }}</small></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3>RATINGS</h3>
+  <div class="row">
+
+    <div class="card col-12 col-md-4 ">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item ">
+
+          <img class="littlelogo" src="/imdb.png" alt="imdb icon" title="imdb icon">
+          &nbsp; &nbsp;IMDb :
+
+          &nbsp; &nbsp; &nbsp; {{ InternetMovieDatabase }}
+        </li>
+        <li class="list-group-item">
+          <img class="littlelogo" src="/tomato.png" alt="rotten tomato" title="Rotten Tomato">
+          &nbsp; &nbsp; Rotten Tomatoes :&nbsp; &nbsp; &nbsp; {{ rottenTomatoesRating }}
+        </li>
+        <li class="list-group-item  m-t-2">
+          <img class="littlelogo" src="/metacritic.png" alt="metacritic" title="metacritic">
+          &nbsp; &nbsp;Metacritic :
+
+          &nbsp; &nbsp; &nbsp; {{ Metacritic }}
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="card col-12 col-md-4  offset-md-4 mt-1">
+      <ul class="list-group list-group-flush ">
+        <li class="list-group-item">
+          <img class="littlelogo" src="/awards.png" alt="awards" title="awards">&nbsp;
+          &nbsp;Awards :
+          &nbsp; &nbsp; &nbsp; {{ data.Awards }}
+
+        </li>
+        <li class="list-group-item">
+          <img class="littlelogo" src="/country.png" alt="Countries" title="Countries">
+          &nbsp; &nbsp; Country :
+
+          &nbsp; &nbsp; &nbsp; {{ data.Country }}
+        </li>
+        <li class="list-group-item">
+          <img class="littlelogo" src="/movie.png" alt="movie" title="movie">
+          &nbsp; &nbsp; Type :
+          &nbsp; &nbsp; &nbsp; {{ data.Type }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- YT VIDEOS START -->
+
+<hr>
+
+<div class="container mt-5 mb-5">
+  <h3 class="mb-5"> {{ data.Title }} &nbsp; VIDEOS</h3>
+  <div class="row">
+
+
+    <div class="col-md-3 col-12 mb-md-0 mb-3">
+      <div class="video-card">
+        <img [src]="api[0]?.snippet?.thumbnails?.high?.url" class="video-thumbnail" alt="Video Thumbnail">
+        <div class="video-info">
+          <h5 class="video-title ">{{ api[0].snippet?.title }}</h5>
+          <button class="btn btn-danger play-video" (click)="onClicked(api[0]?.id?.videoId)">Play</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3 col-12 mb-md-0 mb-3">
+      <div class="video-card">
+        <img [src]="api[1]?.snippet?.thumbnails?.high?.url" class="video-thumbnail" alt="Video Thumbnail">
+        <div class="video-info">
+          <h5 class="video-title">{{ api[1]?.snippet?.title }}</h5>
+          <button class="btn btn-danger play-video" (click)="onClicked(api[1]?.id?.videoId)">Play</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3 col-12 mb-md-0 mb-3">
+      <div class="video-card">
+        <img [src]="api[2]?.snippet?.thumbnails?.high?.url" class="video-thumbnail" alt="Video Thumbnail">
+        <div class="video-info">
+          <h5 class="video-title">{{ api[2]?.snippet?.title }}</h5>
+          <button class="btn btn-danger play-video" (click)="onClicked(api[2]?.id?.videoId)">Play</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3 col-12 mb-md-0 mb-3">
+      <div class="video-card">
+        <img [src]="api[3]?.snippet?.thumbnails?.high?.url" class="video-thumbnail" alt="Video Thumbnail">
+        <div class="video-info">
+          <h5 class="video-title">{{ api[3]?.snippet?.title }}</h5>
+          <button class="btn btn-danger play-video" (click)="onClicked(api[3]?.id?.videoId)">Play</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+@if (Id) {
+  <div class="modal fade show d-block" id="videoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <iframe width="100%" height="315" [src]="Id" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" (click)="onClose()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+}
+

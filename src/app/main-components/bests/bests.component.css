@@ -1,0 +1,26 @@
+.video-card {
+       background: #222;
+       border-radius: 10px;
+       overflow: hidden;
+       text-align: center;
+       padding: 15px;
+       color: white;
+     }
+     .video-thumbnail {
+       width: 100%;
+       border-radius: 8px;
+     }
+     .video-title {
+       margin: 10px;
+       font-size: 1.2rem;
+     }
+     .play-video {
+       margin-top: 10px;
+     }
+     .title{
+ height: 75px;     
+     }
+     .video-thumbnail{
+      height: 207px;
+      width: 276px;
+     }

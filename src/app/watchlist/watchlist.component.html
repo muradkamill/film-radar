@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    @for (item of arr; track $index) {
+      <div class="col-md-4 mt-3 mb-3 ">
+        <div class="card custom-cards border border-dark">
+          <img [src]="item.Poster" class="card-img-top foto" alt="Poster">
+          <div class="card-body text-light">
+            <h5 class="card-title title">{{ item.Title }}</h5>
+            <p class="card-text films">{{ item.Plot }}</p>
+          </div>
+
+
+          <div class="card-body bg-dark text-light">
+
+            <a (click)="onClicked(item)" class="fw-bold card-link ">Card Link</a>
+          </div>
+
+        </div>
+      </div>
+    }
+  </div>
+</div>
+

@@ -1,0 +1,65 @@
+@if ((response == 'True') && search) {
+  <div class="container  w-md-75 ">
+    <h3 class="mb-4">Search Result For : {{ data?.Title }} </h3>
+    <div class="row ">
+      <div class="col-md-4 mt-3 mb-3  ">
+        <div class="card custom-cards border border-dark ">
+          <img src='{{data?.Poster}}' class="  card-img-top" alt="...">
+          <div class="card-body  text-light">
+            <h5 class="card-title " (click)="onClicked()">{{ data?.Title }}</h5>
+            <p class="card-text">{{ data?.Plot }}</p>
+          </div>
+
+
+          <div class="container">
+            <header
+              class="d-flex flex-wrap align-items-center justify-content-between  py-3 mb-4 border-bottom">
+
+
+              <div
+                class=" col-md-3 text-end text-md-end mt-2 mt-md-0 col-6 position-relative d-flex justify-content-end      position-absolute bottom-1 end-0 me-3 mb-4">
+                <button (click)="onWatchlist()"
+                        class="watchlist border-dark border bg-custom-gray text-light  py-0    ">
+                  <img src="/plus.png" alt="plus icon" class="specialButton">
+                </button>
+              </div>
+            </header>
+          </div>
+
+
+          <div class="card-body bg-dark text-light">
+            <a [routerLink]="['/film',name]" class="fw-bold card-link" (click)="onClicked()">Card Link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+}
+
+@if ((response === 'False') && !search) {
+  <div class="container ">
+    <div class="card ">
+      <div class="card-body text-center fw-bold text-light bg-dark">
+        Search Film
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+}
+
+
+@if ((response == 'False') && search) {
+  <div class="container ">
+
+    <div class="card ">
+      <div class="card-body text-center fw-bold text-light bg-dark">
+        Film is not found !
+      </div>
+    </div>
+  </div>
+
+}

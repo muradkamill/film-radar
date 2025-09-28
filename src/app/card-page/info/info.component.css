@@ -1,0 +1,47 @@
+.imdb{
+       color: #ffc857;
+       letter-spacing: 1.5px;
+
+}
+*{
+       font-weight: bold;
+}
+.littlelogo{
+  height: 40px;
+  width: 40px;
+}
+.movie{
+       height: 1.8rem;
+       width: 2.5rem;
+}
+.video-card {
+       background: #222;
+       border-radius: 10px;
+       overflow: hidden;
+       text-align: center;
+       padding: 15px;
+       color: white;
+     }
+     .video-thumbnail {
+       width: 100%;
+       border-radius: 8px;
+     }
+     .video-title {
+       margin: 10px 0;
+       font-size: 1.2rem;
+     }
+     .play-video {
+       margin-top: 10px;
+     }
+     .video-title{
+height:100px;
+overflow:auto;
+     }
+     .video-thumbnail{
+      height: 207px;
+      width: 276px;
+     }
+     .list-group-item{
+      height: 73px;
+      width: 400px;
+     }

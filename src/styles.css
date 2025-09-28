@@ -1,0 +1,36 @@
+.bg-custom-gray {
+       background-color: #2c2c2c;
+     }
+     .bg-custom-yellow {
+       background-color: #ffc857;
+     }
+     .bg-custom-gray {
+       background-color: #2c2c2c;
+     }
+     .bg-custom-red {
+       background-color: #d72638;
+     }
+
+     *{
+       font-family: "Lato", serif;
+       font-weight: 100;
+       font-style: italic;
+     }
+    body {
+
+       background-color: #F0E1B3;
+
+
+    }
+    a{
+      cursor: pointer;
+
+    }
+    button{
+      cursor: pointer;
+
+    }
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,28 @@
+.custom-cards{
+       background-color: #d72638;
+       margin:0;
+       padding: 0;
+}
+.custom-cards a{
+       text-decoration: none;
+       color: #ffc857;
+
+}
+.custom-cards a:hover{
+       color: white;
+}
+.films{
+       height: 200px;
+}
+.foto{
+       height: 550px;
+
+}
+.title{
+       height: 75px;
+       cursor: pointer;
+}
+button>img{
+  height: 48px;
+  width: 48px;
+}
