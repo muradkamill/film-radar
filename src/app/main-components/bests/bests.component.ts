@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { environment } from '../../enviroment/environment.prod.example';
+import { environment } from '../../enviroment/enviroment';
 
 @Component({
   selector: 'app-bests',

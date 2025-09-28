@@ -1,6 +1,6 @@
-export const enviroment = {
-  apiUrl1: '%API_URL1%',
-  apiUrl2: '%API_URL2%',
-  apiKey1: '%API_KEY1%',
-  apiKey2: '%API_KEY2%'
+export const environment = {
+  omdbUrl: '%API_URL1%',
+  youtubeUrl: '%API_URL2%',
+  omdbApiKey: '%API_KEY1%',
+  youtubeApiKey: '%API_KEY2%'
 };

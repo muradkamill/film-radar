@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
 import { ServiceService } from '../../services/service.service';
@@ -8,7 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { environment } from '../../enviroment/environment.prod.example';
+import { environment } from '../../enviroment/enviroment';
 
 @Component({
   selector: 'app-films',
@@ -262,7 +262,4 @@ export class FilmsComponent implements OnInit {
       verticalPosition: 'top',
     });
   }
-
-
-
 }

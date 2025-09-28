@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ServiceService } from '../services/service.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { environment } from '../enviroment/environment.prod.example';
+import { environment } from '../enviroment/enviroment';
 
 @Component({
   selector: 'app-search',
