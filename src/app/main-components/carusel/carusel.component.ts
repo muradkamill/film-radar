@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { environment } from '../../enviroment/enviroment';
+import { environment } from '../../../environments/environment.development';
 
 @Component({
   selector: 'app-carusel',

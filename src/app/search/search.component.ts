@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../shared/header/header.component';
-import { LogoSearchComponent } from '../shared/logo-search/logo-search.component';
-import { FooterComponent } from '../shared/footer/footer.component';
+
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ServiceService } from '../services/service.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { environment } from '../enviroment/enviroment';
+import { environment } from '../../environments/environment.development';
 
 @Component({
   selector: 'app-search',

@@ -4,7 +4,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ServiceService } from '../../services/service.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { environment } from '../../enviroment/enviroment';
+import { environment } from '../../../environments/environment.development';
 
 
 @Component({
