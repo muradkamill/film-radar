@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ServiceService } from '../../services/service.service';
-import { environment } from '../../enviroment/enviroment.prod';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { environment } from '../../enviroment/environment.prod.example';
 
 
 @Component({
